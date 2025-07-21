@@ -19,9 +19,9 @@ while cam.isOpened():
     for height in height:
         for width in width:
             index = int(gray / 255)
-            ascii = CHARACTERS[index]
+            img_arr[height, width] = CHARACTERS[index]
 
-            row.append(ascii)
+            row.append(img_arr)
 
     for i in row:
         print("".join(i))
