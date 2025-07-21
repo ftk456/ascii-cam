@@ -16,10 +16,10 @@ while cam.isOpened():
     height, width = frame.size
     row = []
     
-    for height in height:
-        for width in width:
+    for i in height:
+        for j in width:
             index = int(gray / 255)
-            img_arr[height, width] = CHARACTERS[index]
+            img_arr[i, j] = CHARACTERS[index]
 
             row.append(img_arr)
 
